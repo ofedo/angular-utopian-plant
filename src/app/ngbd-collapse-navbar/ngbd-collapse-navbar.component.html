@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
+    <a class="navbar-brand" [routerLink]="'.'">The Utopian Production Game</a>
+
+    <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+        &#9776;
+    </button>
+
+    <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">Examples</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="'.'" (click)="isMenuCollapsed = true">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>

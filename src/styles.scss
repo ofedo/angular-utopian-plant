@@ -1,0 +1,55 @@
+@import 'bootstrap-variables-custom.scss';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.accordion > .card,
+.accordion > .card:not(:last-of-type),
+.accordion > .card:not(:first-of-type) {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.accordion > .card > .card-header {
+    // background-color: rgba($gray-800, 0.025);
+    padding: 0;
+}
+
+.accordion > .card > .card-header > button {
+    background-color: rgba($gray-800, 0.01);
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.accordion > .card > .card-header > button .status-icon {
+    padding-right: 12px;
+    vertical-align: top;
+}
+
+.accordion > .card > .card-header > button .status-icon.ok {
+    color: $success;
+}
+
+.accordion > .card > .card-header > button .status-icon.error {
+    color: $danger;
+}
+
+.accordion .card-body {
+    // background-color: rgba($gray-800, 0.05);
+}
+
+.endpoint-name.ok {
+    color: $success;
+}
+
+.endpoint-name.error {
+    color: $danger;
+}
+
+.endpoint-url {
+    font-size: 12px;
+}
