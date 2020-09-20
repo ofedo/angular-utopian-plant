@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-httpulse": {
+    "angular-utopian-cities": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-httpulse",
+            "outputPath": "dist/angular-utopian-plant",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-httpulse:build"
+            "browserTarget": "angular-utopian-cities:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-httpulse:build:production"
+              "browserTarget": "angular-utopian-cities:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-httpulse:build"
+            "browserTarget": "angular-utopian-cities:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-httpulse:serve"
+            "devServerTarget": "angular-utopian-cities:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-httpulse:serve:production"
+              "devServerTarget": "angular-utopian-cities:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-httpulse"
+  "defaultProject": "angular-utopian-cities"
 }
